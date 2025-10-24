@@ -126,8 +126,9 @@ function alternatingLetters(str) {
     for (let index = 1; index < strArray.length; index++) {
         if (index % 2 === 0) {
             strArray[index] = strArray[index].toLowerCase();
+        } else {
+            strArray[index] = strArray[index].toUpperCase();
         }
-        strArray[index] = strArray[index].toUpperCase();
     }
     return strArray.join('');
 }
